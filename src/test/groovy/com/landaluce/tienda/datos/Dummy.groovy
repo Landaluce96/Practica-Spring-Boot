@@ -3,9 +3,13 @@ package com.landaluce.tienda.datos
 import com.landaluce.tienda.entity.model.Cliente
 import com.landaluce.tienda.entity.model.Compra
 import com.landaluce.tienda.entity.model.Direccion
+import com.landaluce.tienda.entity.model.Producto
 import com.landaluce.tienda.entity.model.Tarjeta
+import com.landaluce.tienda.entity.model.enums.Categoria
 
 import java.time.LocalDate
+
+import static com.landaluce.tienda.entity.model.enums.Categoria.*
 
 class Dummy {
 
@@ -79,6 +83,27 @@ class Dummy {
 
     static final Compra compra03 = new Compra(
             total: 0.0
+    )
+
+    static final Producto producto01 = new Producto(
+            nombre: "Pan",
+            precio: 0.45,
+            stock: 50,
+            categoria: ALIMENTACION
+    )
+
+    static final Producto producto02 = new Producto(
+            nombre: "portatil",
+            precio: 400,
+            stock: 50,
+            categoria: ELECTRONICA
+    )
+
+    static final Producto producto03 = new Producto(
+            nombre: "Raton",
+            precio: 10,
+            stock: 500,
+            categoria: ELECTRONICA
     )
 
 }
