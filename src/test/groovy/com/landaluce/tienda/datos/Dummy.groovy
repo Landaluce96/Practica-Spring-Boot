@@ -1,6 +1,7 @@
 package com.landaluce.tienda.datos
 
 import com.landaluce.tienda.entity.model.Cliente
+import com.landaluce.tienda.entity.model.Compra
 import com.landaluce.tienda.entity.model.Direccion
 import com.landaluce.tienda.entity.model.Tarjeta
 
@@ -66,6 +67,18 @@ class Dummy {
             numero: '1111111111111333',
             caducidad: LocalDate.of(2025, 9, 1),
             titular: 'CARLOS GOMEZ PEREZ'
+    )
+
+    static final Compra compra01 = new Compra(
+            total: 0.0
+    )
+
+    static final Compra compra02 = new Compra(
+            total: 0.0
+    )
+
+    static final Compra compra03 = new Compra(
+            total: 0.0
     )
 
 }
