@@ -37,7 +37,7 @@ class Direccion implements Serializable{
     String codigo
 
     @Column(nullable = false)
-    String Localidad
+    String localidad
 
     @Column(name = "fecha_alta")
     LocalDateTime fechaAlta
