@@ -2,6 +2,7 @@ package com.landaluce.tienda.datos
 
 import com.landaluce.tienda.entity.model.Cliente
 import com.landaluce.tienda.entity.model.Direccion
+import com.landaluce.tienda.entity.model.Tarjeta
 
 import java.time.LocalDate
 
@@ -47,6 +48,24 @@ class Dummy {
             calle: 'vieja',
             codigo: '28017',
             localidad: 'Madrid'
+    )
+
+    static final Tarjeta tarjeta01 = new Tarjeta(
+            numero: '1111111111111111',
+            caducidad: LocalDate.of(2024, 5, 1),
+            titular: 'JORGE GIMENEZ PEREZ'
+    )
+
+    static final Tarjeta tarjeta02 = new Tarjeta(
+            numero: '1111111111111222',
+            caducidad: LocalDate.of(2024, 6, 1),
+            titular: 'ROBERTO GIMENEZ PEREZ'
+    )
+
+    static final Tarjeta tarjeta03 = new Tarjeta(
+            numero: '1111111111111333',
+            caducidad: LocalDate.of(2025, 9, 1),
+            titular: 'CARLOS GOMEZ PEREZ'
     )
 
 }
